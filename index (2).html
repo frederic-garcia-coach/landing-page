@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Coach de carrière professionnel spécialisé en transition et reconversion. Retrouvez clarté, confiance et sérénité dans votre projet professionnel en 3 mois.">
+    <meta name="keywords" content="coach de carrière, reconversion professionnelle, transition, alignement professionnel, coaching">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Frédéric Garcia - Coach de Carrière Professionnel">
+    <meta property="og:description" content="Accompagnement humain pour retrouver la clarté, la confiance et la sérénité dans votre carrière">
+    <meta property="og:image" content="./frederic-garcia-photo.jpg">
+    
+    <title>Frédéric Garcia - Coach de Carrière | De l'incertitude à la clarté</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Calendly CSS -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fade-in 1s ease-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v2-h2V34zm0 4v2h2v-2zm0-8v2h2v-2zm0-4v2h2v-2zm0-4v2h2v-2zm2-2v2h2v-2zm-2 0v2h2v-2zm0-4v2h2v-2zm0 4v2h2v-2zm0 4v2h2v-2zm0 4v2h2v-2zm0 4v2h2v-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .video-thumbnail {
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .video-thumbnail:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50">
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-indigo-600 via-blue-600 to-indigo-800 opacity-95"></div>
+        <div class="pattern-bg absolute inset-0 opacity-30"></div>
+        
+        <div class="relative max-w-6xl mx-auto px-6 py-24 lg:py-32">
+            <div class="text-center space-y-8 animate-fade-in">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2 text-white/90 text-sm font-medium">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                    </svg>
+                    Accompagnement sur 3 mois
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-tight">
+                    De l'incertitude<br>
+                    <span class="bg-gradient-to-r from-blue-200 via-indigo-200 to-blue-100 bg-clip-text text-transparent">
+                        à la clarté
+                    </span>
+                </h1>
+
+                <!-- Subheadline -->
+                <p class="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed font-light">
+                    Retrouvez plus de sens dans votre carrière, clarifiez votre vision d'avenir et construisez un projet professionnel aligné avec qui vous êtes réellement.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
+                    <a href="#calendly" class="group inline-flex items-center gap-2 bg-white text-indigo-700 px-6 py-3 rounded-full font-semibold text-base shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+                        <svg class="w-4 h-4 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                        Réserver mon appel découverte offert
+                    </a>
+                    <a href="#video" class="inline-flex items-center gap-2 text-white border-2 border-white/30 px-6 py-3 rounded-full font-semibold text-base hover:bg-white/10 hover:border-white/50 transition-all duration-300">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
+                        Voir la présentation
+                    </a>
+                </div>
+
+                <!-- Trust indicators -->
+                <div class="flex flex-wrap justify-center gap-8 pt-12 text-white/80 text-sm">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-blue-200" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>100% en distanciel</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-blue-200" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Approche holistique</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-blue-200" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Coaching de carrière</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave divider -->
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z" fill="#F8FAFC"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Problem/Identification Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
+                    Vous reconnaissez-vous ?
+                </h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+                    Ces signes indiquent qu'il est temps de retrouver le bon chemin pour votre épanouissement professionnel.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-indigo-200">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">😔</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Perte de sens et de motivation</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Vous ressentez un vide intérieur et ne trouvez plus de sens dans votre travail actuel. Le décalage entre ce que vous faites et qui vous êtes grandit chaque jour.
+                    </p>
+                </div>
+
+                <div class="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-indigo-200">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">🌫️</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Confusion et manque de clarté</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Vous vous sentez perdu, sans boussole. Vous ne savez plus ce que vous voulez vraiment ni par où commencer pour avancer.
+                    </p>
+                </div>
+
+                <div class="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-indigo-200">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">😰</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Peur et doute paralysants</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        La peur de l'échec, du jugement et de ne pas être à la hauteur vous freine. Vous procrastinez et tournez en rond depuis des mois.
+                    </p>
+                </div>
+
+                <div class="group bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 hover:border-indigo-200">
+                    <div class="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">😫</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Fatigue émotionnelle et stress</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Vous doutez de vos capacités, vous vous sentez fatigué mentalement et émotionnellement. Le stress et l'anxiété deviennent pesants.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 Pillars Section -->
+    <section class="py-20 px-6 bg-gradient-to-br from-indigo-50 to-blue-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <div class="inline-block bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                    Programme Renaissance Professionnelle
+                </div>
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-800 mb-6">
+                    Les 3 piliers de votre transformation
+                </h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+                    Un accompagnement humain pour retrouver la clarté, la confiance et la sérénité dans votre carrière.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-100 hover:border-indigo-300 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/0 to-blue-500/0 group-hover:from-indigo-500/5 group-hover:to-blue-500/5 transition-all duration-500 rounded-3xl"></div>
+                    
+                    <div class="relative">
+                        <div class="absolute -top-4 -right-4 text-8xl font-bold text-indigo-50 group-hover:text-indigo-100 transition-colors">01</div>
+                        
+                        <svg class="w-12 h-12 text-indigo-600 mb-6 group-hover:scale-110 group-hover:text-indigo-700 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
+                        </svg>
+                        
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4">Clarté & Vision</h3>
+                        
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Définissez avec précision votre mission de vie, votre vision d'avenir et vos objectifs à atteindre. Découvrez qui vous êtes réellement et ce que vous voulez accomplir.
+                        </p>
+                        
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-slate-700">
+                                <svg class="w-5 h-5 text-indigo-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Clarifier votre raison d'être et votre mission de vie</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-700">
+                                <svg class="w-5 h-5 text-indigo-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Établir votre vision d'avenir et les projets qui y mènent</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-700">
+                                <svg class="w-5 h-5 text-indigo-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Structurer un plan d'action concret à mettre en œuvre</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-100 hover:border-indigo-300 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/0 to-blue-500/0 group-hover:from-indigo-500/5 group-hover:to-blue-500/5 transition-all duration-500 rounded-3xl"></div>
+                    
+                    <div class="relative">
+                        <div class="absolute -top-4 -right-4 text-8xl font-bold text-indigo-50 group-hover:text-indigo-100 transition-colors">02</div>
+                        
+                        <svg class="w-12 h-12 text-indigo-600 mb-6 group-hover:scale-110 group-hover:text-indigo-700 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                        
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4">Confiance & Légitimité</h3>
+                        
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Surmontez vos peurs, vos doutes et l'incertitude. Reconnectez avec vos vraies valeurs, motivations et talents uniques.
+                        </p>
+                        
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-slate-700">
+                                <svg class="w-5 h-5 text-indigo-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Dépasser la peur de l'échec et du jugement</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-700">
+                                <svg class="w-5 h-5 text-indigo-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Renforcer votre confiance et votre légitimité</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-700">
+                                <svg class="w-5 h-5 text-indigo-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Gérer vos émotions et votre mindset</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="group relative bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-slate-100 hover:border-indigo-300 overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/0 to-blue-500/0 group-hover:from-indigo-500/5 group-hover:to-blue-500/5 transition-all duration-500 rounded-3xl"></div>
+                    
+                    <div class="relative">
+                        <div class="absolute -top-4 -right-4 text-8xl font-bold text-indigo-50 group-hover:text-indigo-100 transition-colors">03</div>
+                        
+                        <svg class="w-12 h-12 text-indigo-600 mb-6 group-hover:scale-110 group-hover:text-indigo-700 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                        
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4">Alignement & Action</h3>
+                        
+                        <p class="text-slate-600 mb-6 leading-relaxed">
+                            Bâtissez un projet professionnel aligné avec votre vision d'avenir. Retrouver la motivation et la conviction pour passer à l'action.
+                        </p>
+                        
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-slate-700">
+                                <svg class="w-5 h-5 text-indigo-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Équilibre harmonieux entre vie professionnelle et personnelle</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-700">
+                                <svg class="w-5 h-5 text-indigo-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Identifier vos ressources, vos besoins et vos options</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-sm text-slate-700">
+                                <svg class="w-5 h-5 text-indigo-500 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                </svg>
+                                <span>Concrétiser votre projet avec confiance et conviction</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transformation Before/After Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-800 mb-6">
+                    Votre transformation en 3 mois
+                </h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+                    Passer d'un état de confusion et d'incertitude, à la clarté et la confiance dans la réalisation de votre projet.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Before -->
+                <div class="bg-slate-50 rounded-3xl p-10 border-2 border-slate-200">
+                    <div class="text-slate-500 font-semibold mb-6 flex items-center gap-2">
+                        <div class="w-3 h-3 bg-slate-400 rounded-full"></div>
+                        AVANT
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-slate-700">
+                            <span class="text-slate-400 mt-1">✗</span>
+                            <span>Manque de clarté et de précision</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700">
+                            <span class="text-slate-400 mt-1">✗</span>
+                            <span>Perte de sens et de motivation</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700">
+                            <span class="text-slate-400 mt-1">✗</span>
+                            <span>Désorientation et confusion mentale</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700">
+                            <span class="text-slate-400 mt-1">✗</span>
+                            <span>Peur de l'échec et du jugement</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700">
+                            <span class="text-slate-400 mt-1">✗</span>
+                            <span>Doute sur vos capacités</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700">
+                            <span class="text-slate-400 mt-1">✗</span>
+                            <span>Stress et fatigue chronique</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-700">
+                            <span class="text-slate-400 mt-1">✗</span>
+                            <span>Procrastination active</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- After -->
+                <div class="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-3xl p-10 border-2 border-indigo-200 shadow-lg">
+                    <div class="text-indigo-700 font-semibold mb-6 flex items-center gap-2">
+                        <div class="w-3 h-3 bg-indigo-500 rounded-full animate-pulse"></div>
+                        APRÈS
+                    </div>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3 text-slate-800 font-medium">
+                            <svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Vision claire sur vos objectifs et votre vision d'avenir</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-800 font-medium">
+                            <svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Confiance en vos capacités et votre potentiel</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-800 font-medium">
+                            <svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Passage à l'action avec courage et conviction</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-800 font-medium">
+                            <svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Alignement profond avec vos valeurs</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-800 font-medium">
+                            <svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Plan d'action structuré et concret</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-800 font-medium">
+                            <svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Sérénité et paix intérieure</span>
+                        </li>
+                        <li class="flex items-start gap-3 text-slate-800 font-medium">
+                            <svg class="w-5 h-5 text-indigo-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span>Énergie et motivation retrouvées</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="py-20 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-slate-800 mb-6">
+                    Comment ça marche ?
+                </h2>
+                <p class="text-xl text-slate-600 max-w-2xl mx-auto">
+                    Un accompagnement humain, structuré et bienveillant sur 3 mois pour transformer votre carrière.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 text-center group">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-3">1er Rdv / Séance 0</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Nous échangeons sur votre situation, vos objectifs et vos besoins pour confirmer que le programme vous correspond.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 text-center group">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-3">Séances hebdomadaires & bimensuelles</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        10 séances d'1h en visio pour découvrir et explorer en profondeur votre mission de vie, votre vision d'avenir, les projets qui y mènent et les étapes à mettre en œuvre.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 text-center group">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-3">Exercices entre les séances</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Entre les séances, des exercices d'introspection et de clarification seront à envisager pour incarner pleinement votre transformation.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300 border border-slate-100 text-center group">
+                    <div class="inline-flex items-center justify-center w-16 h-16 bg-indigo-100 text-indigo-600 rounded-2xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-800 mb-3">Suivi continu</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Un suivi par WhatsApp entre les séances pour maintenir votre motivation à niveau et répondre à toutes vos questions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-16 bg-gradient-to-br from-indigo-600 to-blue-600 rounded-3xl p-10 text-center text-white shadow-xl">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Format 100% distanciel et flexible</h3>
+                <p class="text-lg text-blue-100 max-w-2xl mx-auto mb-8">
+                    Les séances sont planifiées selon vos disponibilités. Vous pouvez suivre le programme tout en continuant votre activité professionnelle actuelle.
+                </p>
+                <div class="flex flex-wrap justify-center gap-6 text-sm">
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Zoom / Teams / Google Meet</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Horaires adaptables</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span>Support WhatsApp inclus</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
+                    Découvrez mon approche en vidéo
+                </h2>
+                <p class="text-xl text-slate-600">
+                    Prenez quelques minutes pour comprendre comment je peux vous être utile et vous accompagner dans votre transition professionnelle.
+                </p>
+            </div>
+
+            <div class="relative bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl overflow-hidden shadow-2xl aspect-video">
+                <div id="video-container" class="video-thumbnail">
+                    <img 
+                        src="https://img.youtube.com/vi/PXk3ATO_qz4/maxresdefault.jpg"
+                        alt="Vidéo de présentation de Frédéric Garcia"
+                        class="w-full h-full object-cover"
+                    />
+                    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900/50 to-blue-900/50"></div>
+                    <div class="absolute inset-0 flex items-center justify-center" onclick="loadVideo()">
+                        <div class="w-24 h-24 bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-2xl cursor-pointer">
+                            <svg class="w-12 h-12 text-indigo-600 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-8 left-8 right-8 text-white z-10">
+                        <p class="text-lg font-semibold">Découvrez mon approche en vidéo</p>
+                        <p class="text-sm text-white/80">Cliquez pour lire la vidéo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <a 
+                    href="https://youtu.be/PXk3ATO_qz4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-indigo-600 hover:text-indigo-700 font-semibold transition-colors"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                    </svg>
+                    Voir la vidéo sur YouTube
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Who Am I Section -->
+    <section class="py-20 px-6 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div class="order-2 md:order-1">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-400 to-blue-400 rounded-3xl transform rotate-3"></div>
+                        <div class="relative bg-slate-200 rounded-3xl overflow-hidden shadow-2xl aspect-square">
+                            <img 
+                                src="frederic-garcia-photo.jpg" 
+                                alt="Frédéric Garcia - Coach de carrière professionnel"
+                                class="w-full h-full object-cover"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class="order-1 md:order-2">
+                    <div class="inline-block bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                        Qui je suis
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
+                        Le partenaire de votre transformation
+                    </h2>
+                    <div class="space-y-4 text-slate-600 leading-relaxed">
+                        <p>
+                            Coach de carrière professionnel spécialisé dans la transition et la reconversion. J'accompagne mes clients en quête de sens à retrouver la clarté et la confiance dans la réalisation de leur objectif.
+                        </p>
+                        <p>
+                            Mon approche allie <strong class="text-slate-800">la performance et l'excellence</strong> (vision d'avenir, objectifs clairs, plan d'action) et <strong class="text-slate-800">une reconnexion émotionnelle et spirituelle</strong> pour une transformation durable et profonde.
+                        </p>
+                        <p>
+                            Je crois profondément que chacun possède en lui les ressources pour se réaliser pleinement. Mon rôle est de vous guider pour les révéler et les mettre au service de votre mission de vie.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-full shadow-md">
+                            <svg class="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-sm font-medium text-slate-700">Coach certifié</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-full shadow-md">
+                            <svg class="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-sm font-medium text-slate-700">Approche holistique</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white px-5 py-3 rounded-full shadow-md">
+                            <svg class="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-sm font-medium text-slate-700">+2 années d'expérience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
+                    Ils ont transformé leur carrière
+                </h2>
+                <p class="text-xl text-slate-600">
+                    Découvrez l'expérience de ceux qui ont franchi le pas.
+                </p>
+            </div>
+
+            <div class="bg-gradient-to-br from-white to-indigo-50 rounded-3xl p-10 shadow-xl border border-indigo-100">
+                <div class="flex items-start gap-6">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 bg-gradient-to-br from-indigo-400 to-blue-400 rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg">
+                            SM
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="text-5xl text-indigo-200 mb-4">"</div>
+                        <p class="text-lg text-slate-700 leading-relaxed mb-6 italic">
+                            Grâce à l'accompagnement de Frédéric, j'ai retrouvé ma voie. En 3 mois, je suis passé d'un sentiment de confusion totale à une vision claire de mon projet entrepreneurial. Aujourd'hui, je lance mon activité de consultante avec confiance et sérénité.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="font-bold text-slate-800">Sophie M.</p>
+                                <p class="text-sm text-slate-500">Ex-Cadre RH, Reconvertie en Consultante</p>
+                            </div>
+                            <div class="flex gap-1">
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                                <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-6">
+                    Questions fréquentes
+                </h2>
+                <p class="text-xl text-slate-600">
+                    Tout ce que vous devez savoir avant de démarrer votre transformation.
+                </p>
+            </div>
+
+            <div class="space-y-4" id="faq-container">
+                <!-- FAQ Items will be generated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="calendly" class="py-20 px-6 bg-gradient-to-br from-indigo-600 via-blue-600 to-indigo-800 relative overflow-hidden">
+        <div class="pattern-bg absolute inset-0 opacity-30"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="mb-8">
+                <div class="inline-block bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-5 py-2 text-white text-sm font-medium mb-6">
+                    Prêt à transformer votre carrière ?
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                    Réservez votre appel découverte offert
+                </h2>
+                <p class="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
+                    Prenez ce Rdv découverte afin de parler de votre situation, de vos objectifs et de vos besoins dans le développement de votre activité.
+                </p>
+            </div>
+
+            <!-- Calendly Embed - Version compacte -->
+            <div class="bg-white rounded-3xl p-8 shadow-2xl mb-8 max-w-3xl mx-auto">
+                <div 
+                    class="calendly-inline-widget" 
+                    data-url="https://calendly.com/mr-garcia-frederic/45minutes"
+                    style="min-width:320px;height:630px;"
+                ></div>
+            </div>
+
+            <!-- Alternative: Lien direct si le widget ne charge pas -->
+            <div class="text-center">
+                <p class="text-white/80 text-sm mb-3">Le widget ne s'affiche pas ?</p>
+                <a 
+                    href="https://calendly.com/mr-garcia-frederic/45minutes" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white px-6 py-3 rounded-full font-semibold hover:bg-white/20 transition-colors"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                    Ouvrir Calendly dans un nouvel onglet
+                </a>
+            </div>
+
+            <!-- Trust signals -->
+            <div class="flex flex-wrap justify-center gap-8 text-white/90 text-sm mt-12">
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-blue-200" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>Sans engagement</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-blue-200" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>100% gratuit</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-blue-200" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>30 minutes</span>
+                </div>
+            </div>
+
+            <!-- Alternative contact -->
+            <div class="mt-12 pt-8 border-t border-white/20">
+                <p class="text-blue-100 mb-4">Vous préférez m'écrire directement ?</p>
+                <a 
+                    href="mailto:coachlifepro@fredericgarciacoachpro.com" 
+                    class="inline-flex items-center gap-2 text-white font-semibold hover:text-blue-200 transition-colors"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    coachlifepro@fredericgarciacoachpro.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-12 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-12 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Programme Renaissance</h3>
+                    <p class="text-sm leading-relaxed">
+                        Coaching professionnel pour retrouver la clarté, la confiance et la sérénité dans votre carrière.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition-colors">Accueil</a></li>
+                        <li><a href="#video" class="hover:text-white transition-colors">Présentation</a></li>
+                        <li><a href="#calendly" class="hover:text-white transition-colors">Réserver un appel</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <a href="mailto:coachlifepro@fredericgarciacoachpro.com" class="hover:text-white transition-colors">
+                                coachlifepro@fredericgarciacoachpro.com
+                            </a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                            </svg>
+                            <a href="#calendly" class="hover:text-white transition-colors">
+                                Réserver un appel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 text-center text-sm">
+                <p>&copy; 2025 Programme Renaissance Professionnelle. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Calendly Script -->
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // FAQ Accordion
+        const faqData = [
+            {
+                question: "Comment se déroule l'accompagnement ?",
+                answer: "L'accompagnement se déroule sur 3 mois en visioconférence, avec des séances hebdomadaires et bimensuelle d'1h. Entre les séances, vous bénéficiez d'exercices à réaliser et d'un suivi par WhatsApp pour maintenir votre élan."
+            },
+            {
+                question: "À qui s'adresse ce programme ?",
+                answer: "Ce programme est conçu pour les professionnels de 35 à 50 ans en reconversion ou en transition, qui ressentent une perte de sens dans leur carrière et cherchent à retrouver clarté, confiance et alignement professionnel."
+            },
+            {
+                question: "Quel engagement de temps dois-je prévoir ?",
+                answer: "Prévoyez 1h par semaine pour les séances en visio, plus 1 à 2 heures par semaine pour les exercices d'introspection et de clarification. L'investissement personnel est la clé pour une transformation réussie."
+            },
+            {
+                question: "Puis-je suivre le programme tout en travaillant ?",
+                answer: "Absolument ! Le programme est conçu pour s'adapter à votre emploi du temps. Les séances sont planifiées selon vos disponibilités et le format en distanciel vous offre une flexibilité totale."
+            },
+            {
+                question: "Que se passe-t-il après les 3 mois ?",
+                answer: "À l'issue des 3 mois, vous aurez une vision claire sur votre mission de vie, un plan d'action structuré, et les outils pour avancer avec confiance et détermination. Un accompagnement de suivi peut être envisagé selon vos besoins."
+            },
+            {
+                question: "Comment savoir si ce programme est fait pour moi ?",
+                answer: "Si vous ressentez un décalage entre votre travail actuel et votre véritable identité, si vous procrastinez sur votre projet ou si vous cherchez plus de sens et de la clarté, ce programme est fait pour vous. L'appel découverte nous permettra de confirmer ensemble si c'est adapter à votre situation."
+            }
+        ];
+
+        function initializeFAQ() {
+            const faqContainer = document.getElementById('faq-container');
+            faqData.forEach((faq, index) => {
+                const faqItem = document.createElement('div');
+                faqItem.className = 'bg-white rounded-2xl shadow-md overflow-hidden border border-slate-100 hover:border-indigo-200 transition-all duration-300';
+                faqItem.innerHTML = `
+                    <button onclick="toggleFAQ(${index})" class="w-full px-8 py-6 flex items-center justify-between text-left hover:bg-slate-50 transition-colors">
+                        <span class="text-lg font-semibold text-slate-800 pr-8">${faq.question}</span>
+                        <svg class="w-6 h-6 text-indigo-600 flex-shrink-0 faq-icon-${index} transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div id="faq-content-${index}" class="max-h-0 overflow-hidden transition-all duration-300">
+                        <div class="px-8 pb-6 text-slate-600 leading-relaxed">${faq.answer}</div>
+                    </div>
+                `;
+                faqContainer.appendChild(faqItem);
+            });
+        }
+
+        function toggleFAQ(index) {
+            const content = document.getElementById(`faq-content-${index}`);
+            const icon = document.querySelector(`.faq-icon-${index}`);
+            
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                // Close all other FAQ items
+                document.querySelectorAll('[id^="faq-content-"]').forEach(el => {
+                    el.style.maxHeight = '0px';
+                });
+                document.querySelectorAll('[class^="faq-icon-"]').forEach(el => {
+                    el.style.transform = 'rotate(0deg)';
+                });
+                
+                // Open clicked item
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Video Player
+        function loadVideo() {
+            const videoContainer = document.getElementById('video-container');
+            videoContainer.innerHTML = `
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/PXk3ATO_qz4?autoplay=1" 
+                    title="Présentation de Frédéric Garcia - Coach de carrière"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen
+                    class="absolute inset-0"
+                ></iframe>
+            `;
+        }
+
+        // Initialize Calendly Badge Widget
+        window.addEventListener('load', function() {
+            if (window.Calendly) {
+                window.Calendly.initBadgeWidget({ 
+                    url: 'https://calendly.com/mr-garcia-frederic', 
+                    text: 'Planifier du temps pour moi', 
+                    color: '#0069ff', 
+                    textColor: '#ffffff', 
+                    branding: true 
+                });
+
+                // Initialize inline widget with delay
+                setTimeout(function() {
+                    const inlineWidget = document.querySelector('.calendly-inline-widget');
+                    if (inlineWidget && window.Calendly) {
+                        window.Calendly.initInlineWidget({
+                            url: 'https://calendly.com/mr-garcia-frederic/45minutes',
+                            parentElement: inlineWidget,
+                            prefill: {},
+                            utm: {}
+                        });
+                    }
+                }, 500);
+            }
+
+            // Initialize FAQ
+            initializeFAQ();
+        });
+    </script>
+</body>
+</html>
